@@ -27,11 +27,11 @@ function printAllPokemons(data) {
 
 //Post
 async function addNewPokemon() {
-    const nombre = document.getElementById('pokemon-name').value;
-    const numberPoke = document.getElementById('pokemon-number').value;
-    const typePoke = document.getElementById('pokemon-type').value;
+    const nombre = document.getElementById('nombre').value;
+    const numero = document.getElementById('numero').value;
+    const tipo = document.getElementById('tipo').value;
 
-    if (!nombre || !numberPoke || !typePoke) {
+    if (!nombre || !numero || !tipo) {
         alert("Todos los datos son obligatorios");
         return;
     }
@@ -39,7 +39,7 @@ async function addNewPokemon() {
         const response = await fetch(URL, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nombre, numberPoke, typePoke})
+            body: JSON.stringify({ nombre, numero, tipo})
         })
         const newPokemon = await response.json();
         printAllPokemons(newPokemon);
@@ -55,7 +55,7 @@ function addPokemonToPokedex(pokemon) {
         <tr>
         <td>${pokemon.nombre}</td>
         <td>${pokemon.numero}</td>
-        <td>${pokemon.typePoke}</td>
+        <td>${pokemon.tipo}</td>
         </tr>
         `);
 }
