@@ -19,16 +19,16 @@
       "tipo": "Agua"
     },
     {
-      "id": "cc4d",
-      "namePoke": "Charizard",
-      "numberPoke": "6",
-      "typePoke": "Fuego"
+      "id": "a8df",
+      "nombre": "Charizard",
+      "numero": "6",
+      "tipo": "Fuego"
     },
     {
-      "id": "971e",
-      "namePoke": "Pikachu",
-      "numberPoke": "25",
-      "typePoke": "Electrico"
+      "id": "c50f",
+      "nombre": "Pikachu",
+      "numero": "25",
+      "tipo": "Electrico"
     }
   ]
 }
