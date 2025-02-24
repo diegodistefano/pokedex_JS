@@ -1,22 +1,30 @@
 const URL = "http://localhost:3000/pokemon";
 
-parrafo = document.getElementById("parrafo");
+tabla = document.getElementById('tabla');
 
-//Get
+//get
 
-async function getAllPokemons() ¨{
+async function getAllPokemons() {
     const response = await fetch(URL);
     const data = await response.json();
-    printAllPokemons();
-    return data;
-    
+    printAllPokemons(data);
+    // return data; 
 }
 
-printAllPokemons();
-    parrafo.innerHTML = "";
+function printAllPokemons(data) {
+    tabla.innerHTML = "";
     data.forEach(pokemon => {
-        const
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${pokemon.nombre}</td>
+            <td>${pokemon.numero}</td>
+            <td>${pokemon.tipo}</td>
+        `;
+
+        tabla.appendChild(tr);
     });
+}
+
+
 
 getAllPokemons();
-
