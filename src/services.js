@@ -50,7 +50,7 @@ async function deletePokemon(id) {
             method: "DELETE"
         });
         // document.getElementById(`row-${id}`).remove();
-        getAllPokemons();
+        // printAllPokemons();
         
     } catch (error) {
         console.error("Error al eliminar el pokemon:", error);
