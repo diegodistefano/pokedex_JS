@@ -12,39 +12,52 @@ async function getAllPokemons() {
 }
 
 function printAllPokemons(data) {
-    tabla.innerHTML = "";
     data.forEach(pokemon => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
+        // addPokemonToPokedex(pokemon)
+        tabla.insertAdjacentHTML("beforeend",
+            `
+            <tr>
             <td>${pokemon.nombre}</td>
             <td>${pokemon.numero}</td>
             <td>${pokemon.tipo}</td>
-        `;
-
-        tabla.appendChild(tr);
+            </tr>
+            `);
     });
 }
 
 //Post
-async function addNewPokemon(){
+async function addNewPokemon() {
+    const nombre = document.getElementById('nombre').value;
+    const numero = document.getElementById('numero').value;
+    const tipo = document.getElementById('tipo').value;
 
+    if (!nombre || !numero || !tipo) {
+        alert("Todos los datos son obligatorios");
+        return;
+    }
     try {
         const response = await fetch(URL, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ nombre, numero, tipo})
         })
         const newPokemon = await response.json();
-
-
-    catch 
-
-}
-}
-
-getAllPokemons(){
-
+        printAllPokemons(newPokemon);
+        formulario.reset();
+    } catch (error) {
+        console.error("Error al crear pokemon:", error);
+    }   
 }
 
- 
+function addPokemonToPokedex(pokemon) {
+    tabla.insertAdjacentHTML("beforeend",
+        `
+        <tr>
+        <td>${pokemon.nombre}</td>
+        <td>${pokemon.numero}</td>
+        <td>${pokemon.tipo}</td>
+        </tr>
+        `);
+}
+
+getAllPokemons();
