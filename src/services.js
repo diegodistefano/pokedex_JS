@@ -25,6 +25,26 @@ function printAllPokemons(data) {
     });
 }
 
+//Post
+async function addNewPokemon(){
+
+    try {
+        const response = await fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        })
+        const newPokemon = await response.json();
 
 
-getAllPokemons();
+    catch 
+
+}
+}
+
+getAllPokemons(){
+
+}
+
+ 
