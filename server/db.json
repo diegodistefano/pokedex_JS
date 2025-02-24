@@ -17,18 +17,6 @@
       "nombre": "Squirtle",
       "numero": 7,
       "tipo": "Agua"
-    },
-    {
-      "id": "cc4d",
-      "namePoke": "Charizard",
-      "numberPoke": "6",
-      "typePoke": "Fuego"
-    },
-    {
-      "id": "971e",
-      "namePoke": "Pikachu",
-      "numberPoke": "25",
-      "typePoke": "Electrico"
     }
   ]
 }
