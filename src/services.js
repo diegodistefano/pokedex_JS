@@ -90,9 +90,9 @@ function addPokemonToPokedex(pokemon) {
         <td>${pokemon.nombre}</td>
         <td>${pokemon.numero}</td>
         <td>${pokemon.tipo}</td>
-        <td><button class="edit-btn" onclick="updatePokemon('${pokemon.id}', '${pokemon.nombre}', '${pokemon.numero}', '${pokemon.tipo}')">Editar</button></td>
+        <td><button class="edit-btn" onclick="updatePokemon('${pokemon.id}', '${pokemon.nombre}', '${pokemon.numero}', '${pokemon.tipo}')"><i class="fa-solid fa-pen-to-square"></i></button></td>
         
-        <td><button class="delete-btn" onclick="deletePokemon('${pokemon.id}')">Eliminar</button></td>
+        <td><button class="delete-btn" onclick="deletePokemon('${pokemon.id}')"><i class="fa-solid fa-trash"></i></button></td>
         </tr>
         `);
 }

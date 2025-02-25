@@ -44,11 +44,32 @@
     cursor: pointer;
 }
 
-.delete-btn {
+/* .delete-btn {
     background: #da1919;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+} */
+
+.delete-btn {
+    width: 60px;  /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    border-radius: 50%; /* Lo hace circular */
+    border: none;
+    background: linear-gradient(145deg, #bd4b4b, #a83e3e); /* Fondo con degradado */
+    font-size: 24px;
+    font-weight: bold;
+    color: #f6f6f6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff; /* Relieve invertido al hacer clic */
+    transform: scale(0.95); /* Pequeña reducción al presionar */
 }
