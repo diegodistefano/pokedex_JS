@@ -19,16 +19,16 @@
       "tipo": "Agua"
     },
     {
-      "id": "e280",
-      "nombre": "pepe",
-      "numero": "9",
-      "tipo": "Teminator"
+      "id": "a8df",
+      "nombre": "Charizard",
+      "numero": "6",
+      "tipo": "Fuego"
     },
     {
-      "id": "dc5f",
-      "nombre": "diego",
-      "numero": "8",
-      "tipo": "trrt"
+      "id": "c50f",
+      "nombre": "Pikachu",
+      "numero": "25",
+      "tipo": "Electrico"
     }
   ]
 }
