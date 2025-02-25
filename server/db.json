@@ -29,6 +29,12 @@
       "nombre": "Pikachu",
       "numero": "25",
       "tipo": "Electrico"
+    },
+    {
+      "id": "bad8",
+      "nombre": "Fernando",
+      "numero": "666",
+      "tipo": "Diablo"
     }
   ]
 }
