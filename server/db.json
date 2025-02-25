@@ -1,10 +1,10 @@
 {
   "pokemon": [
     {
-      "id": "1",
       "nombre": "Bulbasaur",
-      "numero": 1,
-      "tipo": "Planta"
+      "numero": "3",
+      "tipo": "Arbol",
+      "id": "1"
     },
     {
       "id": "2",

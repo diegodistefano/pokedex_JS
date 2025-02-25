@@ -6,24 +6,31 @@
     <title>Pokedex</title>
 </head>
 <body>
+
     <div class="container-add">
-        <form method="post" id="formulario">
-            <label for="nombre">nombre:<input type="text" id="nombre" name="" /></label>
-            <label for="numero">numero:<input type="text" id="numero" name="" /></label>
-            <label for="tipo">tipo:<input type="text" id="tipo" name="" /></label>
+        <form id="formulario">
+            <label for="nombre">Nombre: <input type="text" id="nombre" /></label>
+            <label for="numero">Número: <input type="text" id="numero" /></label>
+            <label for="tipo">Tipo: <input type="text" id="tipo" /></label>
         </form>
     </div>
-    <button class = "add-btn" onclick = "addNewPokemon()">Agregar Pokemon</button>
 
-    <table id="tabla">
+    <button class="add-btn" onclick="addNewPokemon()">Agregar Pokémon</button>
+    <button class="show-btn" onclick="getAllPokemons()">Mostrar Pokémon</button>
+
+    <table id="tabla" border="1">
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Numero</th>
+                <th>Número</th>
                 <th>Tipo</th>
+                <th>Acciones</th>
             </tr>
         </thead>
+        <tbody></tbody>
     </table>
+
     <script src="./src/services.js"></script>
+
 </body>
 </html>
