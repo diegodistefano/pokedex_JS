@@ -98,5 +98,44 @@ function addPokemonToPokedex(pokemon) {
 }
 
 
+// MODAL PARA REFORMAR
+
+
+// const modal = document.getElementById("modal");
+// const btnAbrir = document.getElementById("btn-abrir-modal");
+// const cerrar = document.querySelector(".close");
+
+// // Abrir el modal
+// btnAbrir.addEventListener("click", () => {
+//     modal.style.display = "flex";
+// });
+
+// // Cerrar el modal al hacer clic en la "X"
+// cerrar.addEventListener("click", () => {
+//     modal.style.display = "none";
+// });
+
+// // Cerrar si se hace clic fuera del modal
+// window.addEventListener("click", (event) => {
+//     if (event.target === modal) {
+//         modal.style.display = "none";
+//     }
+// });
+
+// // Capturar el envío del formulario
+// document.getElementById("formulario").addEventListener("submit", (event) => {
+//     event.preventDefault(); // Evita que la página se recargue
+
+//     // Aquí podés agregar la lógica para guardar el Pokémon
+//     console.log("Pokémon agregado:", {
+//         nombre: document.getElementById("nombre").value,
+//         numero: document.getElementById("numero").value,
+//         tipo: document.getElementById("tipo").value
+//     });
+
+//     // Cerrar el modal después de enviar el formulario
+//     modal.style.display = "none";
+// });
+
 
 printAllPokemons();
