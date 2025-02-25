@@ -60,4 +60,7 @@ function addPokemonToPokedex(pokemon) {
         `);
 }
 
+//Delete
+
+
 getAllPokemons();
