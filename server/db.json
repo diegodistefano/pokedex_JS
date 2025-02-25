@@ -1,10 +1,10 @@
 {
   "pokemon": [
     {
-      "id": "1",
       "nombre": "Bulbasaur",
-      "numero": 1,
-      "tipo": "Planta"
+      "numero": "1",
+      "tipo": "Planta",
+      "id": "1"
     },
     {
       "id": "2",
@@ -29,6 +29,18 @@
       "nombre": "Pikachu",
       "numero": "25",
       "tipo": "Electrico"
+    },
+    {
+      "nombre": "jejejej",
+      "numero": "55",
+      "tipo": "jdjd",
+      "id": "7ff0"
+    },
+    {
+      "nombre": "adios",
+      "numero": "55",
+      "tipo": "66",
+      "id": "7e39"
     }
   ]
 }

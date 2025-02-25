@@ -2,21 +2,24 @@ const URL = "http://localhost:3000/pokemon";
 
 tabla = document.getElementById('tabla');
 
-//get
+//GET
 
 async function getAllPokemons() {
     const response = await fetch(URL);
     const data = await response.json();
-    printAllPokemons(data);
+    return data;
 }
 
-function printAllPokemons(data) {
+//MOSTRAR POKEMONES EN LA TABLA
+async function printAllPokemons() {
+    const data = await getAllPokemons();
+    tabla.innerHTML = "";
     data.forEach(pokemon => {
         addPokemonToPokedex(pokemon);
     });
 }
 
-//Post
+//POST
 async function addNewPokemon() {
     const nombre = document.getElementById('nombre').value;
     const numero = document.getElementById('numero').value;
@@ -34,28 +37,52 @@ async function addNewPokemon() {
         })
         const pokemon = await response.json();
         addPokemonToPokedex(pokemon);
-        formulario.reset();
     } catch (error) {
         console.error("Error al crear pokemon:", error);
     }
 }
 
-//Delete
+//PUT
+async function updatePokemon(id, oldNombre, oldNumero, oldTipo) {
+    const nombre = prompt("Nuevo nombre:", oldNombre)?.trim();
+    const numero = prompt("Nuevo numero:", oldNumero)?.trim();;
+    const tipo = prompt("Nuevo tipo:", oldTipo)?.trim();
+
+    if (!nombre || !numero || !tipo) {
+        alert("Todos los datos son obligatorios");
+        return;
+    }
+    try {
+        const response = await fetch(`${URL}/${id}`, {
+            method: 'PUT',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({nombre, numero, tipo })                
+            });
+            
+    } catch (error) {
+        console.error("Error al actualizar pokemon:", error);
+    }
+    printAllPokemons();
+}
+
+
+//DELETE
 async function deletePokemon(id) {
     if (!confirm("¿Desea confirmar la eliminación?")) return;
 
     try {
         const response = await fetch(`${URL}/${id}`,
-        {
-            method: "DELETE"
-        });
+            {
+                method: "DELETE"
+            });
         document.getElementById(`row-${id}`).remove();
-        
+
     } catch (error) {
         console.error("Error al eliminar el pokemon:", error);
     }
 }
 
+//AGREGAR POKEMON A LA TABLA
 function addPokemonToPokedex(pokemon) {
     tabla.insertAdjacentHTML("beforeend",
         `
@@ -63,9 +90,13 @@ function addPokemonToPokedex(pokemon) {
         <td>${pokemon.nombre}</td>
         <td>${pokemon.numero}</td>
         <td>${pokemon.tipo}</td>
+        <td><button class="edit-btn" onclick="updatePokemon('${pokemon.id}', '${pokemon.nombre}', '${pokemon.numero}', '${pokemon.tipo}')">Editar</button></td>
+        
         <td><button class="delete-btn" onclick="deletePokemon('${pokemon.id}')">Eliminar</button></td>
         </tr>
         `);
 }
 
-getAllPokemons();
+
+
+printAllPokemons();
