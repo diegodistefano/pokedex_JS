@@ -49,8 +49,7 @@ async function deletePokemon(id) {
         {
             method: "DELETE"
         });
-        // document.getElementById(`row-${id}`).remove();
-        // printAllPokemons();
+        document.getElementById(`row-${id}`).remove();
         
     } catch (error) {
         console.error("Error al eliminar el pokemon:", error);
@@ -60,7 +59,7 @@ async function deletePokemon(id) {
 function addPokemonToPokedex(pokemon) {
     tabla.insertAdjacentHTML("beforeend",
         `
-        <tr>
+        <tr id="row-${pokemon.id}">
         <td>${pokemon.nombre}</td>
         <td>${pokemon.numero}</td>
         <td>${pokemon.tipo}</td>
