@@ -1,7 +1,6 @@
 const URL = "http://localhost:3000/pokemon";
 tabla = document.getElementById('tabla');
 
-
 //GET
 async function getAllPokemons() {
     const response = await fetch(URL);
@@ -49,12 +48,11 @@ async function updatePokemon(id) {
         const response = await fetch(`${URL}/${id}`, {
             method: 'PUT',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({nombre, numero, tipo, imagen })                
-            });
-            
-        } catch (error) {
-            console.error("Error al actualizar pokemon:", error);
-        }
+            body: JSON.stringify({ nombre, numero, tipo, imagen })
+        });
+    } catch (error) {
+        console.error("Error al actualizar pokemon:", error);
+    }
     printAllPokemons();
     cerrarModal();
 }
@@ -62,15 +60,14 @@ async function updatePokemon(id) {
 //DELETE
 async function deletePokemon(id) {
     if (!confirm("¿Desea confirmar la eliminación?")) return;
-
     try {
         const response = await fetch(`${URL}/${id}`,
             {
                 method: "DELETE"
-            });    
-        } catch (error) {
-            console.error("Error al eliminar el pokemon:", error);
-        }
+            });
+    } catch (error) {
+        console.error("Error al eliminar el pokemon:", error);
+    }
     document.getElementById(`row-${id}`).remove();
 }
 
@@ -100,15 +97,14 @@ function addPokemonToPokedex(pokemon) {
         `);
 }
 
-// MODAL PARA REFORMAR
-
+// MODAL PARA EDITAR
 function abrirModal(id, nombre, numero, tipo, imagen) {
     document.getElementById("edit-id").value = id;
     document.getElementById("edit-nombre").value = nombre;
     document.getElementById("edit-numero").value = numero;
     document.getElementById("edit-tipo").value = tipo;
     document.getElementById("edit-imagen").value = imagen;
-    
+
     document.getElementById("modal-editar").style.display = "flex";
 }
 
