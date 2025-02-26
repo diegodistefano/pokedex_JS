@@ -4,62 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pokedex</title>
-  </head>
-  <body>
+    </head>
+    <body>
+
+    <!-- TABLA MOSTRAR -->
     <h1>Pokedex</h1>
     
     <div class="container-add">
-       
       <form method="post" id="formulario">
-        <label for="nombre"
-          >nombre:<input type="text" id="nombre" name=""
-        /></label>
-        <label for="numero"
-          >numero:<input type="text" id="numero" name=""
-        /></label>
-        <label for="tipo">tipo:<input type="text" id="tipo" name="" /></label>
-        <label for="imagen">tipo:<input type="file" id="imagen" name="" /></label>
-
+        <label for="nombre">nombre:<input type="text" id="create-nombre" name=""/></label>
+        <label for="numero">numero:<input type="text" id="create-numero" name=""/></label>
+        <label for="tipo">tipo:<input type="text" id="create-tipo" name=""/></label>
+        <label for="imagen">imagen:<input type="text" id="create-imagen" name=""/></label>
       </form>
+    </div>
+    <button class="add-btn" onclick="addNewPokemon()"><i class="fa-solid fa-plus"></i></button>
 
-    </div> 
-
-    <div class="addNewPokemon"></div>
-    <button class="add-btn" onclick="addNewPokemon()">Agregar Pokemon</button>
-
-    
     <table id="tabla">
       <thead>
         <tr>
           <th>Nombre</th>
           <th>Numero</th>
           <th>Tipo</th>
-          <th>Imagen</th>
         </tr>
       </thead>
     </table>
 
-    <!-- <button id="btn-abrir-modal" class="edit-btn">Editar Pokémon</button>
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Editar Pokémon</h2>
-        <form id="formulario">
-          <label>Nombre:</label>
-          <input type="text" id="nombre" />
+    <!-- MODAL EDITAR -->
+    <div id="modal-editar" class="modal">
+        <div class="modal-contenido">
+            <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
+            <h2>Editar Pokémon</h2>
+            <form id="form-editar">
+                <input type="hidden" id="edit-id">
+                <label>Nombre: <input type="text" id="edit-nombre"></label>
+                <label>Número: <input type="text" id="edit-numero"></label>
+                <label>Tipo: <input type="text" id="edit-tipo"></label>
+                <label>Imagen: <input type="text" id="edit-imagen"></label>
+                <button type="submit" class="add-btn"><i class="fa-solid fa-check"></i></button>
+            </form>
+        </div>
+    </div>
 
-          <label>Número:</label>
-          <input type="text" id="numero" />
 
-          <label>Tipo:</label>
-          <input type="text" id="tipo" />
-
-          <button type="submit">Guardar</button>
-        </form>
-      </div>
-    </div> -->
+    <!-- SCRIPTS -->
     <script src="./src/services.js"></script>
   </body>
 </html>
