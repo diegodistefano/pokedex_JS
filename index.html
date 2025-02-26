@@ -10,15 +10,14 @@
     <title>Pokedex</title>
   </head>
   <body>
+
+    <!-- TABLA MOSTRAR -->
     <div class="container-add">
       <form method="post" id="formulario">
-        <label for="nombre"
-          >nombre:<input type="text" id="nombre" name=""
-        /></label>
-        <label for="numero"
-          >numero:<input type="text" id="numero" name=""
-        /></label>
-        <label for="tipo">tipo:<input type="text" id="tipo" name="" /></label>
+        <label for="nombre">nombre:<input type="text" id="create-nombre" name=""/></label>
+        <label for="numero">numero:<input type="text" id="create-numero" name=""/></label>
+        <label for="tipo">tipo:<input type="text" id="create-tipo" name=""/></label>
+        <label for="imagen">imagen:<input type="text" id="create-imagen" name=""/></label>
       </form>
     </div>
     <button class="add-btn" onclick="addNewPokemon()"><i class="fa-solid fa-plus"></i></button>
@@ -33,26 +32,22 @@
       </thead>
     </table>
 
-    <!-- <button id="btn-abrir-modal" class="edit-btn">Editar Pokémon</button> -->
 
-    <!-- <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Editar Pokémon</h2>
-        <form id="formulario">
-          <label>Nombre:</label>
-          <input type="text" id="nombre" />
-
-          <label>Número:</label>
-          <input type="text" id="numero" />
-
-          <label>Tipo:</label>
-          <input type="text" id="tipo" />
-
-          <button type="submit">Guardar</button>
-        </form>
-      </div>
-    </div> -->
+    <!-- MODAL EDITAR -->
+    <div id="modal-editar" class="modal">
+        <div class="modal-contenido">
+            <span class="close" onclick="cerrarModal()"><i class="fa-solid fa-xmark"></i></span>
+            <h2>Editar Pokémon</h2>
+            <form id="form-editar">
+                <input type="hidden" id="edit-id">
+                <label>Nombre: <input type="text" id="edit-nombre"></label>
+                <label>Número: <input type="text" id="edit-numero"></label>
+                <label>Tipo: <input type="text" id="edit-tipo"></label>
+                <label>Imagen: <input type="text" id="edit-imagen"></label>
+                <button type="submit" class="add-btn"><i class="fa-solid fa-check"></i></button>
+            </form>
+        </div>
+    </div>
     <script src="./src/services.js"></script>
   </body>
 </html>

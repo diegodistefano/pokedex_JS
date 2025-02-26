@@ -4,43 +4,36 @@
       "nombre": "Bulbasaur",
       "numero": "1",
       "tipo": "Planta",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png",
       "id": "1"
     },
     {
-      "id": "2",
       "nombre": "Charmander",
-      "numero": 4,
-      "tipo": "Fuego"
+      "numero": "4",
+      "tipo": "Fuego",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png",
+      "id": "2"
     },
     {
-      "id": "3",
       "nombre": "Squirtle",
-      "numero": 7,
-      "tipo": "Agua"
+      "numero": "7",
+      "tipo": "Agua",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png",
+      "id": "3"
     },
     {
-      "id": "a8df",
       "nombre": "Charizard",
       "numero": "6",
-      "tipo": "Fuego"
+      "tipo": "Fuego",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png",
+      "id": "a8df"
     },
     {
-      "id": "c50f",
       "nombre": "Pikachu",
       "numero": "25",
-      "tipo": "Electrico"
-    },
-    {
-      "nombre": "jejejej",
-      "numero": "55",
-      "tipo": "jdjd",
-      "id": "7ff0"
-    },
-    {
-      "nombre": "adios",
-      "numero": "55",
-      "tipo": "66",
-      "id": "7e39"
+      "tipo": "Electrico",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
+      "id": "c50f"
     }
   ]
 }
