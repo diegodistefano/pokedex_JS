@@ -34,6 +34,13 @@
       "tipo": "Electrico",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
       "id": "c50f"
+    },
+    {
+      "nombre": "Rubén",
+      "numero": "2",
+      "tipo": "Trisquel",
+      "imagen": "https://imgs.search.brave.com/P9B5APFmYwedCDY7t3YjlDbVuyVfa95J75qeuuBxvTA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmF0dXJhbC1teXN0/aWMtc2hvcC5jb20v/Y2RuL3Nob3AvYXJ0/aWNsZXMvdHJpc2tl/bGUtYnJldG9uLWxl/dm9neXJlXzEwMjR4/MTAyNC53ZWJwP3Y9/MTY2OTE2NjIyNA",
+      "id": "ce3d"
     }
   ]
 }

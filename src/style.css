@@ -13,9 +13,14 @@ body {
 }
 
 
-h1, h2, h3 {
+h1 {
     font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
     text-align: center;
+} 
+
+h2, h3 {
+    
 }
 
 .main-container {
@@ -32,11 +37,40 @@ h1, h2, h3 {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    font-weight: 800;
+    margin-bottom: 15px;
 }
 
-#tabla {
+.add-btn {
+    background: #4CAF50;
+    padding: 10px 15px;    
+    margin: 0 auto;
+}
+
+.edit-btn, .delete-btn {
+    
+    color: white;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+input {
+    font-weight: bold;
+}
+
+.tabla {
     width: 60%;
     margin: 0 auto;
+    background-color: white;
+    opacity: 0.75;
+    font-weight: 800;
+    border: 2px solid black;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 th, td {
@@ -89,17 +123,6 @@ th, td {
     float: right;
     font-size: 24px;
     cursor: pointer;
-}
-
-.add-btn, .edit-btn, .delete-btn {
-    background: #4CAF50;
-    color: white;
-    margin: 0 auto;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    white-space: nowrap;
 }
 
 .addNewPokemon {
