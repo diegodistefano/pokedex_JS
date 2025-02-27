@@ -19,10 +19,6 @@ h1 {
     text-align: center;
 } 
 
-h2, h3 {
-    
-}
-
 /* .tarjetas-pokemon {
     display: flex;
     justify-content: center;
@@ -139,10 +135,6 @@ th, td {
     display: flex;
     height: 30%;
     padding: 20px;
-}
-
-.add-btn {
-  
 }
 
 .edit-btn {
