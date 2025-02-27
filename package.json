@@ -1,8 +1,25 @@
 {
-  "scripts": {
-    "api": "json-server --watch server/db.json"
+    "scripts": {
+    "api": "json-server --watch server/db.json",
+    "debug": "node --inspect src/main.js"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
-  }
+  },
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegodistefano/pokedex_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegodistefano/pokedex_JS/issues"
+  },
+  "homepage": "https://github.com/diegodistefano/pokedex_JS#readme"
 }
