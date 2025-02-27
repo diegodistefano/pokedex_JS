@@ -1,9 +1,9 @@
 body {
-    background-image: url('./../img/wallpaper-pokemon.jpg');
+    /* background-image: url('./../img/wallpaper-pokemon.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -22,6 +22,16 @@ h1 {
 h2, h3 {
     
 }
+
+/* .tarjetas-pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 800;
+    margin-bottom: 15px;
+} */
 
 .main-container {
     max-width: 1200px;
