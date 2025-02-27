@@ -48,6 +48,13 @@
       "numero": "11",
       "tipo": "Plantaa",
       "imagen": "https://imgs.search.brave.com/VsnwNwRL85Uai6F4IjBSqhteqCT3ptyhAwFH5BEfVQE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMucG9rZW1vbi5j/b20vc3RhdGljLWFz/c2V0cy9jb250ZW50/LWFzc2V0cy9jbXMy/LWVzLWVzL2ltZy9j/YXJkcy93ZWIvRFAz/L0RQM19FU183Ny5w/bmc"
+    },
+    {
+      "id": "e296",
+      "nombre": "Prueba Imagen",
+      "numero": "5",
+      "tipo": "fruta",
+      "imagen": "https://www.pokemon.com/es/noticias-pokemon/nuevo-pokemon-presents-el-27-de-febrero-de-2025-dia-de-pokemon"
     }
   ]
 }

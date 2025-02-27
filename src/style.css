@@ -23,15 +23,16 @@ h2, h3 {
     
 }
 
-/* .tarjetas-pokemon {
+.tarjetas-pokemon {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
     font-weight: 800;
     margin-bottom: 15px;
-} */
+}
 
 .main-container {
     max-width: 1200px;
