@@ -1,6 +1,5 @@
 {
-  "type": "module",
-  "scripts": {
+    "scripts": {
     "api": "json-server --watch server/db.json",
     "debug": "node --inspect src/main.js"
   },
@@ -10,7 +9,7 @@
   "name": "pokedex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
