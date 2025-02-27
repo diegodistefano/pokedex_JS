@@ -1,5 +1,5 @@
 body {
-    background-image: url('./../img/wallpaper-pokemon.jpg');
+    /* background-image: url('./../img/wallpaper-pokemon.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -106,10 +106,6 @@ th, td {
     display: flex;
     height: 30%;
     padding: 20px;
-}
-
-.add-btn {
-  
 }
 
 .edit-btn {

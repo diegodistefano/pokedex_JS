@@ -22,7 +22,7 @@
         <label for="imagen">imagen:<input type="text" id="create-imagen" name=""/></label>
       </form>
     </div>
-    <button class="add-btn" onclick="addNewPokemon()"><i class="fa-solid fa-plus"></i></button>
+    <button class="add-btn" onclick="handleNewPokemon()"><i class="fa-solid fa-plus"></i></button>
 
     <table id="tabla">
       <thead>
@@ -33,7 +33,6 @@
         </tr>
       </thead>
     </table>
-
 
     <!-- MODAL EDITAR -->
     <div id="modal-editar" class="modal">
@@ -53,6 +52,8 @@
 
 
     <!-- SCRIPTS -->
-    <script src="./src/services.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/api/pokemonService.js"></script>
+    <script type="module" src="./src/components/table.js"></script>
   </body>
 </html>

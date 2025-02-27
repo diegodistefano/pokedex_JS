@@ -27,13 +27,6 @@
       "tipo": "Fuego",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png",
       "id": "a8df"
-    },
-    {
-      "nombre": "Pikachu",
-      "numero": "25",
-      "tipo": "Electrico",
-      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png",
-      "id": "c50f"
     }
   ]
 }
