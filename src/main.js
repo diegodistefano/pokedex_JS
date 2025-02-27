@@ -53,13 +53,6 @@ async function deletePokemon(id) {
 
 
 
-
-
-
-
-
-
-
 //PRINT IN TABLE
 async function printAllPokemons() {
     const data = await getPokemon();
