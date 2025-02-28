@@ -203,3 +203,23 @@ input {
 #modal-crear {
   display: none;
 }
+
+.modal-Planta {
+    background-color: #4caf50;
+}
+
+.modal-Electrico {
+    background-color: #c6cc11;
+}
+
+.modal-Psiquico {
+    background-color: #ac4caf;
+}
+
+.modal-Fuego {
+    background-color: #ec2d1f;
+}
+
+.modal-Agua {
+    background-color: #1191cc;
+}

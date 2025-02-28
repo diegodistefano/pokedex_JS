@@ -34,6 +34,13 @@
       "numero": "25",
       "tipo": "Electrico",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
+    },
+    {
+      "id": "8577",
+      "nombre": "MewTwo",
+      "numero": "150",
+      "tipo": "Psiquico",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png"
     }
   ]
 }

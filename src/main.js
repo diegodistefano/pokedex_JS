@@ -113,7 +113,6 @@ function addPokemonToTable(pokemon) {
     });
 }
 
-
 //UPDATE
 async function updatePokemon(id) {
     const nombre = document.getElementById("edit-nombre").value;
@@ -150,6 +149,8 @@ function abrirModalTarjetas(id, nombre, numero, tipo, imagen) {
     document.getElementById("watch-img").src = imagen;
     document.getElementById("watch-img").alt = `Imagen de ${nombre}`;
 
+    document.getElementById("modal-mostrar-contenido").classList.add(`modal-${tipo}`);
+
     document.getElementById("modal-mostrar").style.display = "flex";
 }
 
@@ -181,3 +182,5 @@ function cerrarModal() {
 }
 
 printAllPokemons();
+
+// como añadir una clase a un elemento html 
