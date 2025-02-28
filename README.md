@@ -28,12 +28,12 @@ git clone https://github.com/diegodistefano/pokedex-js.git
 ```bash
 npx json-server --watch db.json --port 3000
 ```
-(Si no tenés json-server, instalalo con: 
+Si no tenés json-server, instalalo con: 
 ```bash
 npm init -y
 npm install -g json-server
 ```
-😉)
+😉
 
 4️⃣ Ejecutá Live Server en tu navegador (hacé clic derecho en index.html → Open with Live Server).
 
@@ -45,7 +45,5 @@ npm install -g json-server
 ✏️ Editar Pokémon → Hacé clic en el ✏️ y cambiá los datos del Pokémon seleccionado.
 🗑 Eliminar Pokémon → Hacé clic en el 🗑 y eliminá al Pokémon que quieras. (Tranqui, solo se eliminan los datos, ningun pokémon se verá afectado en el proceso. 😆)
 
-🏆 ¿Listo para atraparlos todos?
-Si te gustó este proyecto, ¡dejale una ⭐ en GitHub y compartilo con otros entrenadores! 😃
-
-📩 Feedback y mejoras son bienvenidos. ¡Nos vemos en la Liga Pokémon! ⚡🐉
+🏆 List@ para atraparlos ya!?
+Si te gustó este proyecto, atrapalo nomás! 😃
