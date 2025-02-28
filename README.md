@@ -20,7 +20,7 @@ Entrenadores:
 🚀 Cómo correr el proyecto
 1️⃣ Cloná el repo o descargalo en tu compu:
 ```bash
-git clone [https://github.com/tuusuario/pokedex-js.git](https://github.com/diegodistefano/pokedex_JS.git)
+git clone [https://github.com/diegodistefano/pokedex-js.git](https://github.com/diegodistefano/pokedex_JS.git)
 ```
 2️⃣ Abrí la carpeta del proyecto en tu editor favorito (VS Code, por ejemplo).
 
