@@ -62,6 +62,13 @@
       "numero": "104",
       "tipo": "Tierra",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/104.png"
+    },
+    {
+      "id": "ad55",
+      "nombre": "Clefairy",
+      "numero": "35",
+      "tipo": "Hada",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/035.png"
     }
   ]
 }

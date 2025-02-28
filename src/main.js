@@ -88,8 +88,8 @@ function addPokemonToTable(pokemon) {
     row.id = `row-${pokemon.id}`;
     row.innerHTML = `
         <td>${pokemon.nombre}</td>
-        <td>${pokemon.numero}</td>
-        <td>${pokemon.tipo}</td>
+        <td class="only-hidden">${pokemon.numero}</td>
+        <td class="only-hidden">${pokemon.tipo}</td>
         <td><img src="${pokemon.imagen}" alt="imagen" class="imagen-redonda" width="50" height="50"></td>
         <td><button class="watch-btn"><i class="fa-solid fa-eye"></i></button></td>
         <td><button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>

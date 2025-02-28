@@ -14,8 +14,8 @@ Este proyecto es un CRUD donde podés ver, agregar, editar y eliminar Pokémons 
 📦 JSON Server – Para almacenar los datos de los Pokémon.
 
 Entrenadores:
- **Rubén** - Maestro del Gimnasio del Maquetado    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/rubenortegagonzalez/)
- **Diego** - Maestro del Gimnasio del Código    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/diegodistefano/)
+ ⭐ **Rubén** - Maestro del Gimnasio del Maquetado    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/rubenortegagonzalez/)
+ ⭐ **Diego** - Maestro del Gimnasio del Código    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/diegodistefano/)
 
 🚀 Cómo correr el proyecto
 1️⃣ Cloná el repo o descargalo en tu compu:

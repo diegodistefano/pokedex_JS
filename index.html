@@ -23,14 +23,6 @@
     <!-- TABLA DE POKEMON -->
     <div class="borde-tabla">
       <table id="tabla" class="tabla">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Numero</th>
-            <th>Tipo</th>
-            <th>Imagen</th>
-          </tr>
-        </thead>
       </table>
     </div>
 
@@ -47,8 +39,25 @@
             >Número:<input type="text" id="create-numero" name=""
           /></label>
           <label for="tipo"
-            >Tipo:<input type="text" id="create-tipo" name=""
-          /></label>
+            >Tipo:<select id="create-tipo">
+              <option value="Planta">🌿 Planta</option>
+              <option value="Fuego">🔥 Fuego</option>
+              <option value="Agua">💧 Agua</option>
+              <option value="Electrico">⚡ Eléctrico</option>
+              <option value="Hielo">❄️ Hielo</option>
+              <option value="Lucha">🥊 Lucha</option>
+              <option value="Veneno">☠️ Veneno</option>
+              <option value="Tierra">🌍 Tierra</option>
+              <option value="Volador">🕊️ Volador</option>
+              <option value="Psiquico">🧠 Psíquico</option>
+              <option value="Bicho">🐛 Bicho</option>
+              <option value="Roca">🪨 Roca</option>
+              <option value="Fantasma">👻 Fantasma</option>
+              <option value="Dragon">🐉 Dragón</option>
+              <option value="Siniestro">🌑 Siniestro</option>
+              <option value="Acero">⚙️ Acero</option>
+              <option value="Hada">✨ Hada</option>
+            </select></label>
           <label for="imagen"
             >Imagen:<input type="text" id="create-imagen" name=""
           /></label>
@@ -78,7 +87,7 @@
             /></label>
             <label>Tipo: <input type="text" id="watch-tipo" readonly /></label>
             <label
-              ><input type="text" id="watch-imagen" readonly
+              ><input class="only-hidden" type="text" id="watch-imagen" readonly
             /></label>
           </div>
         </form>
