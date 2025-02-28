@@ -16,7 +16,6 @@
 
     </nav>
 
-    <main class="tarjetas-pokemon">
       <h1>Pokedex</h1>
     
     <div class="container-add">
@@ -43,6 +42,27 @@
     <!-- </main> -->
 
 
+    <!-- MODAL MOSTRAR TARJETAS BOTON WATCH AZUL -->
+    <div id="modal-tarjetas-pokemon" class="modal">
+      <div class="modal-contenido">
+          <i class="close fa-solid fa-xmark" onclick="cerrarModalTarjetas()"></i>
+          <h2>Mostrar Pokémon</h2>
+          <form id="form-mostrar">
+              <input type="hidden" id="watch-id">
+              <label>Nombre: <input type="text" id="watch-nombre" readonly></label>
+              <label>Número: <input type="text" id="watch-numero" readonly></label>
+              <label>Tipo: <input type="text" id="watch-tipo" readonly></label>
+              <label>Imagen: <input type="text" id="watch-imagen" readonly></label>
+              <img id="watch-img" class="imagen-redonda" width="50" height="50">
+          </form>
+      </div>
+  </div>
+
+
+
+
+
+
     <!-- MODAL EDITAR -->
     <div id="modal-editar" class="modal">
         <div class="modal-contenido">
@@ -58,6 +78,14 @@
             </form>
         </div>
     </div>
+
+
+
+
+
+
+
+
 
 
     <!-- SCRIPTS -->

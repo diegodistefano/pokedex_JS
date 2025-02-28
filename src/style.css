@@ -19,7 +19,7 @@ h1 {
     text-align: center;
 } 
 
-.tarjetas-pokemon {
+#modal-tarjetas-pokemon {
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -99,13 +99,13 @@ function addPokemonToTable(pokemon) {
 
     tabla.appendChild(row);
 
-    // const watchBtn = row.querySelector(".edit-btn");
+    const watchBtn = row.querySelector(".watch-btn");
     const editBtn = row.querySelector(".edit-btn");
     const deleteBtn = row.querySelector(".delete-btn");
 
-    // watchBtn.addEventListener("click", () => {
-    //     abrirModal(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
-    // });
+    watchBtn.addEventListener("click", () => {
+        abrirModalTarjetas(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
+    });
     editBtn.addEventListener("click", () => {
         abrirModal(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
     });
@@ -130,6 +130,25 @@ async function updatePokemon(id) {
     await putPokemon(id, nombre, numero, tipo, imagen);
     printAllPokemons();
     cerrarModal();
+}
+
+
+// MODAL PARA MOSTRAR TARJETAS
+function abrirModalTarjetas(id, nombre, numero, tipo, imagen) {
+    document.getElementById("watch-id").value = id;
+    document.getElementById("watch-nombre").value = nombre;
+    document.getElementById("watch-numero").value = numero;
+    document.getElementById("watch-tipo").value = tipo;
+    document.getElementById("watch-imagen").value = imagen;
+
+    document.getElementById("watch-img").src = imagen;
+    document.getElementById("watch-img").alt = `Imagen de ${nombre}`;
+
+    document.getElementById("modal-tarjetas-pokemon").style.display = "flex";
+}
+
+function cerrarModalTarjetas() {
+    document.getElementById("modal-tarjetas-pokemon").style.display = "none";
 }
 
 
