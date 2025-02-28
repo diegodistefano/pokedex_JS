@@ -54,6 +54,7 @@ async function deletePokemon(id) {
 //PRINT IN TABLE
 async function printAllPokemons() {
     const data = await getPokemon();
+    data.sort((a, b) => a.numero - b.numero);
     tabla.innerHTML = "";
     data.forEach(pokemon => {
         addPokemonToTable(pokemon);

@@ -41,6 +41,20 @@
       "numero": "150",
       "tipo": "Psiquico",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png"
+    },
+    {
+      "id": "a136",
+      "nombre": "Gengar",
+      "numero": "94",
+      "tipo": "Fantasma",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png"
+    },
+    {
+      "id": "c53e",
+      "nombre": "Nidoking",
+      "numero": "34",
+      "tipo": "Veneno",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/034.png"
     }
   ]
 }
