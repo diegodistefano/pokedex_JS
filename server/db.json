@@ -41,6 +41,27 @@
       "numero": "150",
       "tipo": "Psiquico",
       "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png"
+    },
+    {
+      "id": "6632",
+      "nombre": "Gengar",
+      "numero": "94",
+      "tipo": "Fantasma",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/094.png"
+    },
+    {
+      "id": "ec9d",
+      "nombre": "Nidoking",
+      "numero": "34",
+      "tipo": "Veneno",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/034.png"
+    },
+    {
+      "id": "1494",
+      "nombre": "Cubone",
+      "numero": "104",
+      "tipo": "Tierra",
+      "imagen": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/104.png"
     }
   ]
 }

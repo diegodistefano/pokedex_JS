@@ -209,10 +209,18 @@ input {
 }
 
 .tarjeta-Electrico {
-    background-color: #c6cc11;
+    background-color: #f5ea15;
 }
 
 .tarjeta-Psiquico {
+    background-color: #ac4caf;
+}
+
+.tarjeta-Fantasma {
+    background-color: #ac4caf;
+}
+
+.tarjeta-Veneno {
     background-color: #ac4caf;
 }
 
@@ -223,6 +231,11 @@ input {
 .tarjeta-Agua {
     background-color: #1191cc;
 }
+
+.tarjeta-Tierra {
+    background-color: #98661b;
+}
+
 
 #watch-imagen {
     display: none;
