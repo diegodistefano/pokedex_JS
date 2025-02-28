@@ -107,7 +107,7 @@ function addPokemonToTable(pokemon) {
         abrirModalTarjetas(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
     });
     editBtn.addEventListener("click", () => {
-        abrirModal(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
+        abrirModalEditar(pokemon.id, pokemon.nombre, pokemon.numero, pokemon.tipo, pokemon.imagen);
     });
     deleteBtn.addEventListener("click", () => {
         deletePokemon(pokemon.id);
@@ -132,6 +132,16 @@ async function updatePokemon(id) {
     cerrarModal();
 }
 
+// MODAL PARA CREAR
+function abrirModalAgregarPokemon(nombre, numero, tipo, imagen) {
+    // document.getElementById("create-id").value = id;
+    nombre = document.getElementById("create-nombre").value;
+    numero = document.getElementById("create-numero").value;
+    tipo = document.getElementById("create-tipo").value;
+    imagen = document.getElementById("create-imagen").value;
+
+    document.getElementById("modal-crear").style.display = "flex";
+}
 
 // MODAL PARA MOSTRAR TARJETAS
 function abrirModalTarjetas(id, nombre, numero, tipo, imagen) {
@@ -140,22 +150,14 @@ function abrirModalTarjetas(id, nombre, numero, tipo, imagen) {
     document.getElementById("watch-numero").value = numero;
     document.getElementById("watch-tipo").value = tipo;
     document.getElementById("watch-imagen").value = imagen;
-
     document.getElementById("watch-img").src = imagen;
     document.getElementById("watch-img").alt = `Imagen de ${nombre}`;
 
-    document.getElementById("modal-tarjetas-pokemon").style.display = "flex";
+    document.getElementById("modal-mostrar").style.display = "flex";
 }
-
-function cerrarModalTarjetas() {
-    document.getElementById("modal-tarjetas-pokemon").style.display = "none";
-}
-
-
-
 
 // MODAL PARA EDITAR
-function abrirModal(id, nombre, numero, tipo, imagen) {
+function abrirModalEditar(id, nombre, numero, tipo, imagen) {
     document.getElementById("edit-id").value = id;
     document.getElementById("edit-nombre").value = nombre;
     document.getElementById("edit-numero").value = numero;
@@ -165,15 +167,22 @@ function abrirModal(id, nombre, numero, tipo, imagen) {
     document.getElementById("modal-editar").style.display = "flex";
 }
 
-function cerrarModal() {
-    document.getElementById("modal-editar").style.display = "none";
-}
-
 document.getElementById("form-editar").addEventListener("submit", async function (event) {
     event.preventDefault();
     const id = document.getElementById("edit-id").value;
 
     updatePokemon(id);
 });
+
+
+document.getElementById("create-btn").addEventListener("click", () => {
+    abrirModalAgregarPokemon();
+});
+
+function cerrarModal() {
+    document.getElementById("modal-editar").style.display = "none";
+    document.getElementById("modal-mostrar").style.display = "none";
+    document.getElementById("modal-crear").style.display = "none";
+}
 
 printAllPokemons();

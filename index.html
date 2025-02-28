@@ -4,89 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Pokedex</title>
   </head>
   <body>
-
     <!-- TABLA MOSTRAR -->
-    <nav>
+    <nav></nav>
 
-    </nav>
+    <h1>Pokedex</h1>
 
-      <h1>Pokedex</h1>
-    
-    <div class="container-add">
-      <form method="post" id="formulario">
-        <label for="nombre">Nombre:<input type="text" id="create-nombre" name=""/></label>
-        <label for="numero">Número:<input type="text" id="create-numero" name=""/></label>
-        <label for="tipo">Tipo:<input type="text" id="create-tipo" name=""/></label>
-        <label for="imagen">Imagen:<input type="text" id="create-imagen" name=""/></label>
-      </form>
-    </div>
-    <button class="add-btn" onclick="handleNewPokemon()"><i class="fa-solid fa-plus"></i></button>
+    <button id="create-btn" class="create-btn">
+      <a>Agrega un nuevo pokémon</a>
+    </button>
 
-    <table id="tabla">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Numero</th>
-          <th>Tipo</th>
-          <th>Imagen</th>
-        </tr>
-      </thead>
-    </table>
-
-    <!-- </main> -->
-
-
-    <!-- MODAL MOSTRAR TARJETAS BOTON WATCH AZUL -->
-    <div id="modal-tarjetas-pokemon" class="modal">
+    <div id="modal-crear" class="modal">
       <div class="modal-contenido">
-          <i class="close fa-solid fa-xmark" onclick="cerrarModalTarjetas()"></i>
-          <h2>Mostrar Pokémon</h2>
-          <form id="form-mostrar">
-              <input type="hidden" id="watch-id">
-              <label>Nombre: <input type="text" id="watch-nombre" readonly></label>
-              <label>Número: <input type="text" id="watch-numero" readonly></label>
-              <label>Tipo: <input type="text" id="watch-tipo" readonly></label>
-              <label>Imagen: <input type="text" id="watch-imagen" readonly></label>
-              <img id="watch-img" class="imagen-redonda" width="50" height="50">
-          </form>
+        <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
+          <h2>Agregar Pokémon</h2>
+        <form method="post" id="formulario">
+          <label for="nombre"
+            >Nombre:<input type="text" id="create-nombre" name=""
+          /></label>
+          <label for="numero"
+            >Número:<input type="text" id="create-numero" name=""
+          /></label>
+          <label for="tipo"
+            >Tipo:<input type="text" id="create-tipo" name=""
+          /></label>
+          <label for="imagen"
+            >Imagen:<input type="text" id="create-imagen" name=""
+          /></label>
+        </form>
+  
+        <button class="add-btn" onclick="handleNewPokemon()">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
-  </div>
+    </div>
 
+    <div class="borde-tabla">
+      <table id="tabla" class="tabla">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
 
-
-
-
+    <!-- MODAL MOSTRAR TARJETAS -->
+    <div id="modal-mostrar" class="modal">
+      <div class="modal-contenido">
+        <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
+        <h2>Datos del Pokémon</h2>
+        <div class="imagen-modal">
+          <img id="watch-img" src="" alt="Imagen Pokémon" />
+        </div>
+        <form id="form-mostrar">
+          <input type="hidden" id="watch-id" />
+          <div class="formulario-contenedor">
+            <label
+              >Nombre: <input type="text" id="watch-nombre" readonly
+            /></label>
+            <label
+              >Número: <input type="text" id="watch-numero" readonly
+            /></label>
+            <label>Tipo: <input type="text" id="watch-tipo" readonly /></label>
+            <label
+              >Imagen: <input type="text" id="watch-imagen" readonly
+            /></label>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- MODAL EDITAR -->
     <div id="modal-editar" class="modal">
-        <div class="modal-contenido">
-            <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
-            <h2>Editar Pokémon</h2>
-            <form id="form-editar">
-                <input type="hidden" id="edit-id">
-                <label>Nombre: <input type="text" id="edit-nombre"></label>
-                <label>Número: <input type="text" id="edit-numero"></label>
-                <label>Tipo: <input type="text" id="edit-tipo"></label>
-                <label>Imagen: <input type="text" id="edit-imagen"></label>
-                <button type="submit" class="add-btn"><i class="fa-solid fa-check"></i></button>
-            </form>
-        </div>
+      <div class="modal-contenido">
+        <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
+        <h2>Editar datos</h2>
+        <form id="form-editar">
+          <input type="hidden" id="edit-id" />
+          <label>Nombre: <input type="text" id="edit-nombre" /></label>
+          <label>Número: <input type="text" id="edit-numero" /></label>
+          <label>Tipo: <input type="text" id="edit-tipo" /></label>
+          <label>Imagen: <input type="text" id="edit-imagen" /></label>
+          <button type="submit" class="add-btn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </form>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
 
     <!-- SCRIPTS -->
     <script src="./src/main.js"></script>
