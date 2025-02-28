@@ -20,7 +20,7 @@ Entrenadores:
 🚀 Cómo correr el proyecto
 1️⃣ Cloná el repo o descargalo en tu compu:
 ```bash
-git clone [https://github.com/diegodistefano/pokedex-js.git](https://github.com/diegodistefano/pokedex_JS.git)
+git clone https://github.com/diegodistefano/pokedex-js.git
 ```
 2️⃣ Abrí la carpeta del proyecto en tu editor favorito (VS Code, por ejemplo).
 
@@ -28,7 +28,12 @@ git clone [https://github.com/diegodistefano/pokedex-js.git](https://github.com/
 ```bash
 npx json-server --watch db.json --port 3000
 ```
-(Si no tenés json-server, instalalo con: npm install -g json-server 😉)
+(Si no tenés json-server, instalalo con: 
+```bash
+npm init -y
+npm install -g json-server
+```
+😉)
 
 4️⃣ Ejecutá Live Server en tu navegador (hacé clic derecho en index.html → Open with Live Server).
 
