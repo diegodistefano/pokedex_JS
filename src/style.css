@@ -204,15 +204,15 @@ input {
   display: none;
 }
 
-.modal-Planta {
+.tarjeta-Planta {
     background-color: #4caf50;
 }
 
-.modal-Electrico {
-    background-color: #c6cc11;
+.tarjeta-Electrico {
+    background-color: #f5ea15;
 }
 
-.modal-Psiquico {
+.tarjeta-Psiquico {
     background-color: #ac4caf;
 }
 .modal-Fantasma {
@@ -222,10 +222,27 @@ input {
     background-color: #ac4caf;
 }
 
-.modal-Fuego {
+.tarjeta-Fantasma {
+    background-color: #ac4caf;
+}
+
+.tarjeta-Veneno {
+    background-color: #ac4caf;
+}
+
+.tarjeta-Fuego {
     background-color: #ec2d1f;
 }
 
-.modal-Agua {
+.tarjeta-Agua {
     background-color: #1191cc;
+}
+
+.tarjeta-Tierra {
+    background-color: #98661b;
+}
+
+
+#watch-imagen {
+    display: none;
 }

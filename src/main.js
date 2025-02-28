@@ -150,8 +150,16 @@ function abrirModalTarjetas(id, nombre, numero, tipo, imagen) {
     document.getElementById("watch-img").src = imagen;
     document.getElementById("watch-img").alt = `Imagen de ${nombre}`;
 
-    document.getElementById("modal-mostrar-contenido").classList.add(`modal-${tipo}`);
+    const modalContenido = document.getElementById("modal-mostrar-contenido");
+    
+    modalContenido.classList.forEach(claseTipo => {
+        if (claseTipo.startsWith("tarjeta-")) {
+            modalContenido.classList.remove(claseTipo);
+        }
+    });
 
+    modalContenido.classList.add(`tarjeta-${tipo}`);
+    
     document.getElementById("modal-mostrar").style.display = "flex";
 }
 
