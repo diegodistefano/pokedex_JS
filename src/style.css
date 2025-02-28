@@ -204,22 +204,26 @@ input {
   display: none;
 }
 
-.modal-Planta {
+.tarjeta-Planta {
     background-color: #4caf50;
 }
 
-.modal-Electrico {
+.tarjeta-Electrico {
     background-color: #c6cc11;
 }
 
-.modal-Psiquico {
+.tarjeta-Psiquico {
     background-color: #ac4caf;
 }
 
-.modal-Fuego {
+.tarjeta-Fuego {
     background-color: #ec2d1f;
 }
 
-.modal-Agua {
+.tarjeta-Agua {
     background-color: #1191cc;
+}
+
+#watch-imagen {
+    display: none;
 }
