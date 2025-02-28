@@ -165,7 +165,7 @@ a {
   text-align: center;
   width: 350px;
   border-radius: 8px;
-  background-color: #dc0830;
+  background-color: #db383d;
   padding: 20px;
   border: 1px solid black;
   position: relative;
@@ -195,6 +195,7 @@ label {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 5px;
   font-weight: bold;
   font-size: 1.5rem;
   color:#000000;
