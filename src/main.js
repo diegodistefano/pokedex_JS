@@ -51,8 +51,6 @@ async function deletePokemon(id) {
     }
 }
 
-
-
 //PRINT IN TABLE
 async function printAllPokemons() {
     const data = await getPokemon();
@@ -134,7 +132,6 @@ async function updatePokemon(id) {
 
 // MODAL PARA CREAR
 function abrirModalAgregarPokemon(nombre, numero, tipo, imagen) {
-    // document.getElementById("create-id").value = id;
     nombre = document.getElementById("create-nombre").value;
     numero = document.getElementById("create-numero").value;
     tipo = document.getElementById("create-tipo").value;
@@ -170,10 +167,8 @@ function abrirModalEditar(id, nombre, numero, tipo, imagen) {
 document.getElementById("form-editar").addEventListener("submit", async function (event) {
     event.preventDefault();
     const id = document.getElementById("edit-id").value;
-
     updatePokemon(id);
 });
-
 
 document.getElementById("create-btn").addEventListener("click", () => {
     abrirModalAgregarPokemon();

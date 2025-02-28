@@ -1,209 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    color: #333;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    justify-content: center;  
-    min-height: 100vh;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
-    font-size: 4rem;
-    text-align: center;
-} 
+  font-size: 4rem;
+  text-align: center;
+}
 
 h2 {
-    font-size: 2rem;
-    text-align: center;
-} 
+  font-size: 2rem;
+  text-align: center;
+}
 
 a {
-    font-size: 1.rem;
-    text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* ---------------FORMULARIO AGREGAR NUEVO POKEMON---------------- */
 
 .close {
-    float: right;
-    font-size: 24px;
-    cursor: pointer;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .addNewPokemon {
-    display: flex;
-    height: 30%;
-    padding: 20px;
+  display: flex;
+  height: 30%;
+  padding: 20px;
 }
-
 
 /* ---------------TABLA LISTADO---------------- */
 
 .borde-tabla {
-    border: 6px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 6px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tabla {
-    width: 60%;
-    background-color: white;
-    font-weight: 800;
-    border: 40px solid #d5273e;
-    border-collapse: collapse;
+  width: 60%;
+  background-color: white;
+  font-weight: 800;
+  border: 40px solid #d5273e;
+  border-collapse: collapse;
 }
 
-th, td {
-    border: 2px solid #e5e5e5;
-    padding: 8px; 
-    text-align: left;
+th,
+td {
+  border: 2px solid #e5e5e5;
+  padding: 8px;
+  text-align: left;
 }
 
- /* ------------------BOTONES-------------------- */
+/* ------------------BOTONES-------------------- */
 
 .create-btn {
-    padding: 10px 15px;    
-    margin: 10px auto;
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-    border-color: #4CAF50;
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-}
- 
-.add-btn {
-    padding: 10px 15px;    
-    margin: 10px auto;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border-color: #4CAF50;
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  border-color: #4caf50;
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.watch-btn{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border-color: #263ccc;
-    background: #263ccc;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
+.add-btn {
+  padding: 10px 15px;
+  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #4caf50;
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.watch-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #263ccc;
+  background: #263ccc;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .edit-btn {
-    width: 60px;  
-    height: 60px;
-    border-radius: 50%; 
-    border-color: #c6cc11;
-    background: #c6cc11;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #c6cc11;
+  background: #c6cc11;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .delete-btn {
-    width: 60px;  
-    height: 60px;
-    border-radius: 50%; 
-    border-color: #eb0000;
-    background: #eb0000;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.delete-btn:active {
-    transform: scale(0.85);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-color: #eb0000;
+  background: #eb0000;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 /* ---------------MODAL NUEVO POKEMON---------------- */
 
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 350px;
-    border-radius: 8px;
-    background-color: #d5273e;
-    padding: 20px;
-    border: 1px solid black;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  border-radius: 8px;
+  background-color: #d5273e;
+  padding: 20px;
+  border: 1px solid black;
+  position: relative;
 }
 
 .imagen-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .imagen-modal img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
 }
 
 .formulario-contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 8px;
 }
 
 label {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
 }
 
 input {
-    width: 60%;
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: white;
+  width: 60%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
 }
 
 #modal-editar {
-    display: none;
+  display: none;
 }
 
-#modal-mostrar{
-    display: none;
+#modal-mostrar {
+  display: none;
 }
 
-#modal-crear{
-    display: none;
+#modal-crear {
+  display: none;
 }

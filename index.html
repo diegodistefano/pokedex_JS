@@ -14,19 +14,31 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <!-- TABLA MOSTRAR -->
-    <nav></nav>
-
     <h1>Pokedex</h1>
 
     <button id="create-btn" class="create-btn">
       <a>Agrega un nuevo pokémon</a>
     </button>
 
+    <!-- TABLA DE POKEMON -->
+    <div class="borde-tabla">
+      <table id="tabla" class="tabla">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <!-- MODAL CREAR NUEVO POKEMON -->
     <div id="modal-crear" class="modal">
       <div class="modal-contenido">
         <i class="close fa-solid fa-xmark" onclick="cerrarModal()"></i>
-          <h2>Agregar Pokémon</h2>
+        <h2>Agregar Pokémon</h2>
         <form method="post" id="formulario">
           <label for="nombre"
             >Nombre:<input type="text" id="create-nombre" name=""
@@ -41,24 +53,10 @@
             >Imagen:<input type="text" id="create-imagen" name=""
           /></label>
         </form>
-  
         <button class="add-btn" onclick="handleNewPokemon()">
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
-    </div>
-
-    <div class="borde-tabla">
-      <table id="tabla" class="tabla">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Numero</th>
-            <th>Tipo</th>
-            <th>Imagen</th>
-          </tr>
-        </thead>
-      </table>
     </div>
 
     <!-- MODAL MOSTRAR TARJETAS -->
